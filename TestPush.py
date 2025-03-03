@@ -11,11 +11,10 @@ list_of_mail = list()
 
 for m in s:
     count = mails.count(m)
-    list_of_mail.append([m, count])
+    list_of_mail.append((m, count))
 
 list_of_mail.sort(key = lambda x: x[1] , reverse=True)
-del list_of_mail[20::]
 
 
-for _ in list_of_mail:
-    print (_[0], _[1])
+for email, freq in list_of_mail[20::]:
+    print (email, freq)
