@@ -18,3 +18,5 @@ list_of_mail.sort(key = lambda x: x[1] , reverse=True)
 
 for email, freq in list_of_mail[20::]:
     print (email, freq)
+
+print ("Бим бам бом бим, проверка Вадима")
